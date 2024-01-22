@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(168, 185, 179);
+}
+h1,p1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+
