@@ -1,2 +1,2 @@
 # SebastianDuarteG.github.io
-My GitHubs Pages Site
+My GitHub Pages Site
