@@ -8,9 +8,14 @@ body{
     background-size: 100px;
 }
 
-a:link{
+ul2{
+    list-style-image: url(pie_icon.gif);
+}
+
+a:link, h1, h2{
     color: #a4A400;
 }
+
 .quotes{
     font-style: italic;
     margin-left: 40px;
@@ -24,7 +29,7 @@ a:link{
 
 
 h1, h2{
-    color: #A4A400;
+    display: inline;
     background-color: #F0F0F0;
     font-family:'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
     text-decoration: underline;
