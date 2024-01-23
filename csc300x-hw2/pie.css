@@ -3,9 +3,12 @@ body{
     color: #404040;
     font-size: 11pt;
     font-family: 'Georgia', 'Garamond', serif;
+    background-image:url("silverware.jpg");
+    background-repeat: repeat;
+    background-size: 100px;
 }
 
-.links{
+a:link{
     color: #a4A400;
 }
 .quotes{
