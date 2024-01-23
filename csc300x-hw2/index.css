@@ -1,13 +1,18 @@
 body{
-    background-color: rgb(168, 185, 179);
+    background-color: rgb(221, 233, 229);
 }
-h1,p1 {
+h1,h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 h1{
     text-align: center;
+    background-color: rgb(233, 83, 83);
+}
+h2{
+    font-size: 20px;
+    background-color: rgb(246, 168, 168);
 }
 p{
-    font-size: 20px;
+    font-size: 17px;
 }
 
