@@ -20,6 +20,8 @@ a:link, a:visited, h1, h2{
     font-style: italic;
     margin-left: 40px;
     background-color: #FFFFA8;
+    display:inline-flexbox;
+    margin-right:40px;
 }
 
 #notice{
