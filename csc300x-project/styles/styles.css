@@ -1,0 +1,32 @@
+header{
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+#flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 14px 16px;
+}
+
+#flex-container input[type=text]{
+    font-size: 18px;
+}
+
+#search-button{
+    background-color: rgb(190, 255, 61);
+    font-family: comic;
+    font-weight: bold;
+}
+
+#flex-container img{
+    width: 2%;
+    height: 2%;
+    
+}
+.flex-item{
+    border-radius: 10px;
+    margin:20px 0
+}
