@@ -1,27 +1,107 @@
+/*
+Name: Sebastian Duarte
+Assignment: Assignment: CSC300x Project: Storepage
+File Contents:  Style sheet for ClaySoul storepage
+*/
+
 header{
     font-size: 18pt;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer, .dropdown-button{
     background-color: aquamarine;
 }
 
-#flex-container{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 14px 16px;
+header, footer, #splash-section{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#flex-container input[type=text]{
+#splash-section section{
+    text-align: center;
+}
+.dropdown-options a, #splash-section section{
+    padding:8px;
+}
+
+#splash-section header{
+    color:rgb(197, 127, 6);
+    font-size: 23px;
+    background-color: white;
+    padding: 10px;
+}
+#splash-section header, #search-button{
+    font-weight: bold;
+}
+
+#splash-section{
+    vertical-align: text-top;
+}
+#splash-section, h2, .dropdown-button{
+    font-size: 20px;
+}
+
+h2{
+    color:rgb(247, 146, 31);
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+}
+
+.flex-container input[type=text]{
     font-size: 18px;
+
+}
+
+.flex-container a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.flex-container a, .dropdown-button{
+    font-weight:bolder;
+}
+
+.dropdown-section{
+    position:relative;
+    display: inline-block;
+}
+
+.dropdown-button{
+    border:none;
+}
+
+.dropdown-options{
+    display: none;
+    position:absolute;
+    background-color: rgb(151, 196, 112);
+    min-width: 100px;
+    box-shadow: 0px 7px 10px 0px rgb(147, 172, 243);
+    right: 0;
+    text-align: right;
+    background-size:cover;
+}
+
+.dropdown-options a{
+    color:rgb(67, 65, 65);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.dropdown-section:hover .dropdown-options, .dropdown-options a{
+    display: block;
 }
 
 #search-button{
     background-color: rgb(190, 255, 61);
     font-family: comic;
-    font-weight: bold;
 }
 
-#flex-container img{
+.flex-container img{
     width: 2%;
     height: 2%;
     
