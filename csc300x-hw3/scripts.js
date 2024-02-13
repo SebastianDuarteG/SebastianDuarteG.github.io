@@ -1,3 +1,9 @@
+/*
+Name: Sebastian Duarte
+Assignment: Assignment: CSC300x HW 3
+File Contents:  Script file for Spartan Eats and meal page
+*/
+
 document.addEventListener('DOMContentLoaded', function(){
     const images = document.querySelectorAll(".flex-item2 img");
     for (let i=0; i<images.length; i++){
@@ -46,7 +52,6 @@ function onClick2(item){
     const price = parseFloat(item.dataset.cost);
 
     const newItem = document.createElement('li');
-    ;
 
     const mealPlan = document.getElementById("meal-plan");
     mealPlan.appendChild(newItem);
