@@ -46,10 +46,6 @@ function onClick2(item){
     const price = parseFloat(item.dataset.cost);
 
     const newItem = document.createElement('li');
-    newItem.innerHTML = 
-        <span>${description} - $${price} </span>
-        <button class="remove-item">Remove</button>
-        <button class="add-another">Add Another</button>
     ;
 
     const mealPlan = document.getElementById("meal-plan");
@@ -64,7 +60,7 @@ function removeItem (item) {
 }
 
 function addAnother (item){
-    
+
 }
 
 
