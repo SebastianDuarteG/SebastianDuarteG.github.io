@@ -4,6 +4,10 @@ Assignment: Assignment: CSC300x Project: Storepage
 File Contents:  Style sheet for ClaySoul storepage
 */
 
+body{
+    margin: 0px;
+}
+
 header{
     font-size: 18pt;
 }
@@ -13,8 +17,14 @@ header, footer, .dropdown-button, .flex-item{
     border-radius: 10px;
 }
 
-header, footer, .splash-section, .flex-item, .flex-item2, .flex-item3{
+header, footer, .splash-section, .flex-item, .flex-item2, .flex-item3, 
+    .product-Edit-Text{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-Edit-Text{
+    font-size: 19px;
+    padding: 10px;
 }
 
 .splash-section section, h3, .flex-item2, .flex-item3{
@@ -107,12 +117,19 @@ h4{
     display: block;
 }
 
-.goButton{
+.goButton, .goButton2{
     background-color: rgb(190, 255, 61);
     font-family: comic;
     border-color: rgb(244, 164, 164);
     border-style: groove;
+}
+
+.goButton{
     padding: 5px;
+}
+
+.goButton2 {
+    margin: 10px;
 }
 
 .flex-container img{
@@ -149,4 +166,8 @@ h4{
 }
 .qty input[type=text]{
     width: 30px;
+}
+
+.input-Admin{
+    margin:10px;
 }
