@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+input#gitUser{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+#searchRepos{
+    padding: 5px;
+    background-color: rgb(70, 56, 56);
+    color: white;
+}
+
+#gallery, .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: row;
+}
+
+.repo{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    width:40px
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    inline-size: 300px;
+    padding: 5px;
+    font-size: 17px;
+}
