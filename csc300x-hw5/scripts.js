@@ -1,3 +1,10 @@
+/*
+Name: Sebastian Duarte
+Assignment: Assignment: CSC300x HW 5
+File Contents:  Script file for GitHub Gallery using github API
+*/
+
+
 document.addEventListener('DOMContentLoaded', function(){
     const button = document.getElementById('searchRepos');
     button.addEventListener('click', function (){
