@@ -62,9 +62,14 @@ document.addEventListener('DOMContentLoaded', function(){
                     return response.json();
                 })
                 .then (data => {
-                    const numberOfCommits = data.length;
-                    commitsElement.textContent = 'Number of Commits: ' +
-                        numberOfCommits;
+                    if (data){
+                        const numberOfCommits = data.length;
+                        commitsElement.textContent = 'Number of Commits: ' +
+                            numberOfCommits;
+                    }else{
+                        commitsElement = 'Number of Commits: N/A';
+                    }
+                    
                 })
                 .catch (error => console.error('Could not get commits', error));
             
