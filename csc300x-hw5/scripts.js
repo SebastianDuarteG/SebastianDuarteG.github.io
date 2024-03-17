@@ -62,16 +62,14 @@ document.addEventListener('DOMContentLoaded', function(){
                     return response.json();
                 })
                 .then (data => {
-                    if (data){
-                        const numberOfCommits = data.length;
-                        commitsElement.textContent = 'Number of Commits: ' +
-                            numberOfCommits;
-                    }else{
-                        commitsElement = 'Number of Commits: N/A';
-                    }
-                    
+                    const numberOfCommits = data.length;
+                    commitsElement.textContent = 'Number of Commits: ' +
+                        numberOfCommits;
                 })
                 .catch (error => console.error('Could not get commits', error));
+            if (!commitsElement.textContent){
+                commitsElement.textContent = 'Number of Commits: N/A'
+            }
             
             const languageElement = document.createElement('p');
             languageElement.textContent = 'Languages: ' +  (repo.language ? repo.language : 'N/A');
