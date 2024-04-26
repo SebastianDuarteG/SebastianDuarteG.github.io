@@ -5,5 +5,5 @@ To run application:<br />
 3. run nodemon app.js on terminal.
 4. Open index.html and use app.
 
-Admin login: SampleAdmin@gmai.com password: 123456
+Admin login: SampleAdmin@gmail.com password: 123456
 User Login: SampleUser@gmail.com password:123456
