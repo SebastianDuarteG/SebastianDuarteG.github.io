@@ -1,52 +1,55 @@
 CREATE TABLE Users (
-	userId		 varchar(15)	NOT NULL UNIQUE,
-	dateCreated	 INT NOT NULL,
-	timeCreated  INT NOT NULL,
+	userId		 INTEGER PRIMARY KEY,
+	dateCreated	 INTEGER NOT NULL,
+	timeCreated  INTEGER NOT NULL,
 	userName 	 varchar(50) NOT NULL,
 	userEmail 	 varchar(50) NOT NULL UNIQUE,
 	userPassword varchar(30) NOT NULL,
-	userType	 varchar(10) NOT NULL,
-	PRIMARY KEY (userId)
+	userType	 varchar(10) NOT NULL
 );
 
 CREATE TABLE Categories(
-	catId	varchar(15) NOT NULL UNIQUE,
+	catId	INTEGER PRIMARY KEY,
 	catName	varchar(30) NOT NULL UNIQUE,
-	catOrder INT NOT NULL,
-	PRIMARY KEY (catId)
+	catOrder INTEGER NOT NULL
 );
 
 CREATE TABLE Products(
-	productId	 varchar(25) NOT NULL UNIQUE,
+	productId	 INTEGER PRIMARY KEY,
 	productName  varchar(30) NOT NULL UNIQUE,
 	imageUrl	 varchar(100) NOT NULL,
-	productPrice INT NOT NULL,
+	productPrice INTEGER NOT NULL,
 	productDesc	 varchar(200) NOT NULL,
 	productDimen varchar(200) NOT NULL,
 	productMater varchar(200) NOT NULL,
-	catId		 varchar(15) NOT NULL UNIQUE,
-	productFeat	 INT NOT NULL,
-	PRIMARY KEY (productId),
+	catId		 INTEGER NOT NULL,
+	productFeat	 INTEGER NOT NULL,
 	FOREIGN KEY (catId) REFERENCES Categories(catId)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 
 CREATE TABLE Carts(
-	cartId	   varchar(15) NOT NULL UNIQUE,
-	cartStatus INT NOT NULL,
-	cartDate   INT NOT NULL,
-	userId	   varchar(15) NOT NULL UNIQUE,
-	PRIMARY KEY (cartId),
+	cartId	   INTEGER PRIMARY KEY,
+	cartStatus INTEGER NOT NULL,
+	cartDate   INTEGER NOT NULL,
+	userId	   INTEGER NOT NULL,
 	FOREIGN KEY (userId) REFERENCES Users(userId)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 
 CREATE TABLE CartProducts(
-	cartProdId	varchar(15) NOT NULL UNIQUE,
-	cartId	    varchar(15) NOT NULL UNIQUE,
-	productId	varchar(25) NOT NULL UNIQUE,
-	quantity	INT NOT NULL,
-	PRIMARY KEY (cartProdId),
-	FOREIGN KEY (cartId) REFERENCES Carts(cartId),
+	cartProdId	INTEGER PRIMARY KEY,
+	cartId	    INTEGER NOT NULL,
+	productId	INTEGER NOT NULL,
+	quantity	INTEGER NOT NULL,
+	FOREIGN KEY (cartId) REFERENCES Carts(cartId)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE,
 	FOREIGN KEY (productId) REFERENCES Products(productId)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 
 

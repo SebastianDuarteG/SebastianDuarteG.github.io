@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> Hourly Employee </title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="hourlyEmp.js"></script>
+
+    </head>
+    <body>
+        <header>
+            Hourly Employee
+            <div class="flex-container2">
+            <a href="/public/employee.html">Employee</a> 
+            <a href="/public/salariedEmp.html">Salaried Employee</a> 
+            <a href="/public/hourlyEmp.html">Hourly Employee</a> 
+            <a href="/public/department.html">Department</a> 
+            <a href="/public/location.html">Location</a> 
+            <a href="/public/project.html">Project</a> 
+            <a href="/public/worksOn.html">Works On</a> 
+            <a href="/public/dependent.html">Dependent</a> 
+            </div>
+        </header>
+
+        <h2>Search: </h2>
+        <div id="search">
+            <div class="flex-container">
+                <input type="text" id="searchSSN" placeholder="Enter ssn:">
+                <button id="find">Search</button>
+            </div>
+        </div>
+
+        <h2>Add Hourly Employee: </h2>
+        <div id="add">
+            <div class="flex-container">
+                <input type="text" id="addSSN" placeholder="Enter ssn: ">
+                <input type="text" id="addHourPay" placeholder="Enter hour pay: ">
+                <button id="create">Add Hourly Employee</button>
+            </div>
+        </div>
+
+        <h2>Edit Hourly Employee: </h2>
+        <div id="edit">
+            <div class="flex-container">
+                <input type="text" id="editSSN" placeholder="Enter ssn:">
+                <input type="text" id="editHourPay" placeholder="Enter hour pay: ">
+                <button id="alter">Edit Hourly Employee</button>
+            </div>
+        </div>
+        
+        
+
+        <h2>Delete Hourly Employee: </h2>
+        <div id="delete">
+            <div class="flex-container">
+                <input type="text" id="deleteSSN" placeholder="Enter ssn:">
+                <button id="remove">Delete Hourly Employee</button>
+            </div>
+
+        </div>
+
+        <div id="table-container"> 
+            <table id="hourlyEmpTable">
+            </table>
+        </div>
+        
+        
+        
+    </body>
+</html>

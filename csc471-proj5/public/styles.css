@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    background-color: rgb(226, 182, 182);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(176, 174, 174);
+}
+
+p{
+    padding: 10px;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+header, h2{
+    
+    padding: 8px;
+    margin-top: 10px;
+}
+
+h2{
+    margin: 10px;
+    padding: 10px;
+}
+
+.table-container{
+    overflow-x: auto;
+    display: block;
+}
+
+table{
+    width: auto;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    table-layout: auto;
+    border-collapse: collapse;
+    background-color: rgb(208, 229, 255);
+}
+
+table, th, td{
+
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th, td{
+    text-align: start;
+}
+
+input{
+    padding: 5px;
+    margin: 8px;
+    width: auto;
+
+}
+
+button{
+    background-color:rgb(244, 196, 244);
+
+}
+
+.flex-container, .flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction: row;
+
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: gray;
+    margin: 20px;
+}
+
+.flex-container2 a{
+    background-color: rgb(161, 158, 158);
+    font-size: 20px;
+    padding: 5px;
+    margin: 15px;
+}

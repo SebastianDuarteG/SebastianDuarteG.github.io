@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> Dependent </title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="dependent.js"></script>
+
+    </head>
+    <body>
+        <header>
+            Dependent
+            <div class="flex-container2">
+            <a href="/public/employee.html">Employee</a> 
+            <a href="/public/salariedEmp.html">Salaried Employee</a> 
+            <a href="/public/hourlyEmp.html">Hourly Employee</a> 
+            <a href="/public/department.html">Department</a> 
+            <a href="/public/location.html">Location</a> 
+            <a href="/public/project.html">Project</a> 
+            <a href="/public/worksOn.html">Works On</a> 
+            <a href="/public/dependent.html">Dependent</a> 
+            </div>
+        </header>
+
+        <h2>Search: </h2>
+        <div id="search">
+            <div class="flex-container">
+                <input type="text" id="searchSSN" placeholder="Enter SSN:">
+                <input type="text" id="searchName" placeholder="Enter Name:">
+                <button id="find">Search</button>
+            </div>
+        </div>
+
+        <h2>Add Dependent: </h2>
+        <div id="add">
+            <div class="flex-container">
+                <input type="text" id="addSSN" placeholder="Enter SSN: ">
+                <input type="text" id="addName" placeholder="Enter Name: ">
+                <input type="text" id="addRelation" placeholder="Enter relation: ">
+                <button id="create">Add Dependent</button>
+            </div>
+        </div>
+
+        <h2>Edit Dependent: </h2>
+        <div id="edit">
+            <div class="flex-container">
+                <input type="text" id="editSSN" placeholder="Enter SSN: ">
+                <input type="text" id="editName" placeholder="Enter Name: ">
+                <input type="text" id="editRelation" placeholder="Enter Relation: ">
+                <button id="alter">Edit Dependent</button>
+            </div>
+        </div>
+        
+        
+
+        <h2>Delete Dependent: </h2>
+        <div id="delete">
+            <div class="flex-container">
+                <input type="text" id="deleteSSN" placeholder="Enter SSN:">
+                <input type="text" id="deleteName" placeholder="Enter Name:">
+                <button id="remove">Delete Dependent</button>
+            </div>
+
+        </div>
+
+        <div id="table-container"> 
+            <table id="dependentTable">
+            </table>
+        </div>
+        
+        
+        
+    </body>
+</html>

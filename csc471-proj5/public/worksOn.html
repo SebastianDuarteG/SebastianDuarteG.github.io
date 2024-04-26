@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> Works On </title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="worksOn.js"></script>
+
+    </head>
+    <body>
+        <header>
+            Works On
+            <div class="flex-container2">
+            <a href="/public/employee.html">Employee</a> 
+            <a href="/public/salariedEmp.html">Salaried Employee</a> 
+            <a href="/public/hourlyEmp.html">Hourly Employee</a> 
+            <a href="/public/department.html">Department</a> 
+            <a href="/public/location.html">Location</a> 
+            <a href="/public/project.html">Project</a> 
+            <a href="/public/worksOn.html">Works On</a> 
+            <a href="/public/dependent.html">Dependent</a> 
+            </div>
+        </header>
+
+        <h2>Search: </h2>
+        <div id="search">
+            <div class="flex-container">
+                <input type="text" id="searchSSN" placeholder="Enter SSN:">
+                <button id="find">Search</button>
+            </div>
+        </div>
+
+        <h2>Add Works On: </h2>
+        <div id="add">
+            <div class="flex-container">
+                <input type="text" id="addSSN" placeholder="Enter SSN: ">
+                <input type="text" id="addDeptNum" placeholder="Enter deptNum: ">
+                <input type="text" id="addProjNum" placeholder="Enter projNum: ">
+                <button id="create">Add Works On</button>
+            </div>
+        </div>
+
+        <h2>Edit Works On: </h2>
+        <div id="edit">
+            <div class="flex-container">
+                <input type="text" id="editSSN" placeholder="Enter SSN: ">
+                <input type="text" id="editDeptNum" placeholder="Enter deptNum: ">
+                <input type="text" id="editProjNum" placeholder="Enter projNum: ">
+                <button id="alter">Edit Works On</button>
+            </div>
+        </div>
+        
+        
+
+        <h2>Delete Works On: </h2>
+        <div id="delete">
+            <div class="flex-container">
+                <input type="text" id="deleteSSN" placeholder="Enter SSN:">
+                <button id="remove">Delete Works On</button>
+            </div>
+
+        </div>
+
+        <div id="table-container"> 
+            <table id="worksOnTable">
+            </table>
+        </div>
+        
+        
+        
+    </body>
+</html>

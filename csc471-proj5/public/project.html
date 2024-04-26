@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> Project </title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="project.js"></script>
+
+    </head>
+    <body>
+        <header>
+            Project
+            <div class="flex-container2">
+            <a href="/public/employee.html">Employee</a> 
+            <a href="/public/salariedEmp.html">Salaried Employee</a> 
+            <a href="/public/hourlyEmp.html">Hourly Employee</a> 
+            <a href="/public/department.html">Department</a> 
+            <a href="/public/location.html">Location</a> 
+            <a href="/public/project.html">Project</a> 
+            <a href="/public/worksOn.html">Works On</a> 
+            <a href="/public/dependent.html">Dependent</a> 
+            </div>
+        </header>
+
+        <h2>Search: </h2>
+        <div id="search">
+            <div class="flex-container">
+                <input type="text" id="searchProjNum" placeholder="Enter projNum:">
+                <button id="find">Search</button>
+            </div>
+        </div>
+
+        <h2>Add Project: </h2>
+        <div id="add">
+            <div class="flex-container">
+                <input type="text" id="addProjNum" placeholder="Enter projNum: ">
+                <input type="text" id="addProjName" placeholder="Enter Project Name: ">
+                <input type="text" id="addProjDesc" placeholder="Enter Project Description: ">
+                <button id="create">Add Project</button>
+            </div>
+        </div>
+
+        <h2>Edit Project: </h2>
+        <div id="edit">
+            <div class="flex-container">
+                <input type="text" id="editProjNum" placeholder="Enter projNum: ">
+                <input type="text" id="editProjName" placeholder="Enter Project Name: ">
+                <input type="text" id="editProjDesc" placeholder="Enter Project Description: ">
+                <button id="alter">Edit Project</button>
+            </div>
+        </div>
+        
+        
+
+        <h2>Delete Project: </h2>
+        <div id="delete">
+            <div class="flex-container">
+                <input type="text" id="deleteProjNum" placeholder="Enter projNum:">
+                <button id="remove">Delete Project</button>
+            </div>
+
+        </div>
+
+        <div id="table-container"> 
+            <table id="projectTable">
+            </table>
+        </div>
+        
+        
+        
+    </body>
+</html>

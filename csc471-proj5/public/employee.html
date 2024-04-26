@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> Employee </title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="employee.js"></script>
+
+    </head>
+    <body>
+        <header>
+            Employee
+            <div class="flex-container2">
+            <a href="/public/employee.html">Employee</a> 
+            <a href="/public/salariedEmp.html">Salaried Employee</a> 
+            <a href="/public/hourlyEmp.html">Hourly Employee</a> 
+            <a href="/public/department.html">Department</a> 
+            <a href="/public/location.html">Location</a> 
+            <a href="/public/project.html">Project</a> 
+            <a href="/public/worksOn.html">Works On</a> 
+            <a href="/public/dependent.html">Dependent</a> 
+            </div>
+        </header>
+
+        <h2>Search: </h2>
+        <div id="search">
+            <div class="flex-container">
+                <input type="text" id="searchSSN" placeholder="Enter ssn:">
+                <button id="find">Search</button>
+            </div>
+        </div>
+
+        <h2>Add Employee: </h2>
+        <div id="add">
+            <div class="flex-container">
+                <input type="text" id="addSSN" placeholder="Enter ssn:">
+                <input type="text" id="addDOB" placeholder="Date Of Birth: MMDDYYYY">
+                <input type="text" id="addfName" placeholder="Enter First Name:">
+                <input type="text" id="addmInit" placeholder="Enter Middle Initial:">
+                <input type="text" id="addlName" placeholder="Enter Last Name:">
+                <input type="text" id="addaddress" placeholder="Enter Address:">
+                <button id="create">Add Employee</button>
+            </div>
+        </div>
+
+        <h2>Edit Employee: </h2>
+        <div id="edit">
+            <div class="flex-container">
+                <input type="text" id="editSSN" placeholder="Enter ssn:">
+                <input type="text" id="editDOB" placeholder="Date Of Birth: MMDDYYYY">
+                <input type="text" id="editfName" placeholder="Enter First Name:">
+                <input type="text" id="editmInit" placeholder="Enter Middle Initial:">
+                <input type="text" id="editlName" placeholder="Enter Last Name:">
+                <input type="text" id="editaddress" placeholder="Enter Address:">
+                <button id="alter">Edit Employee</button>
+            </div>
+        </div>
+        
+        
+
+        <h2>Delete Employee: </h2>
+        <div id="delete">
+            <div class="flex-container">
+                <input type="text" id="deleteSSN" placeholder="Enter ssn:">
+                <button id="remove">Delete Employee</button>
+            </div>
+
+        </div>
+
+        <div id="table-container"> 
+            <table id="employeeTable">
+            </table>
+        </div>
+        
+        
+        
+    </body>
+</html>

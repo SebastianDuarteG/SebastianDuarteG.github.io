@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title> Location </title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="location.js"></script>
+
+    </head>
+    <body>
+        <header>
+            Location
+            <div class="flex-container2">
+            <a href="/public/employee.html">Employee</a> 
+            <a href="/public/salariedEmp.html">Salaried Employee</a> 
+            <a href="/public/hourlyEmp.html">Hourly Employee</a> 
+            <a href="/public/department.html">Department</a> 
+            <a href="/public/location.html">Location</a> 
+            <a href="/public/project.html">Project</a> 
+            <a href="/public/worksOn.html">Works On</a> 
+            <a href="/public/dependent.html">Dependent</a> 
+            </div>
+        </header>
+
+        <h2>Search: </h2>
+        <div id="search">
+            <div class="flex-container">
+                <input type="text" id="searchDeptNum" placeholder="Enter deptNum:">
+                <button id="find">Search</button>
+            </div>
+        </div>
+
+        <h2>Add Location: </h2>
+        <div id="add">
+            <div class="flex-container">
+                <input type="text" id="addDeptNum" placeholder="Enter deptNum: ">
+                <input type="text" id="addLocAddress" placeholder="Enter Location Address: ">
+                <button id="create">Add Location</button>
+            </div>
+        </div>
+
+        <h2>Edit Location: </h2>
+        <div id="edit">
+            <div class="flex-container">
+                <input type="text" id="editDeptNum" placeholder="Enter deptNum: ">
+                <input type="text" id="editLocAddress" placeholder="Enter Location Address: ">
+                <button id="alter">Edit Location</button>
+            </div>
+        </div>
+        
+        
+
+        <h2>Delete Location: </h2>
+        <div id="delete">
+            <div class="flex-container">
+                <input type="text" id="deleteDeptNum" placeholder="Enter deptNum:">
+                <button id="remove">Delete Location</button>
+            </div>
+
+        </div>
+
+        <div id="table-container"> 
+            <table id="locationTable">
+            </table>
+        </div>
+        
+        
+        
+    </body>
+</html>

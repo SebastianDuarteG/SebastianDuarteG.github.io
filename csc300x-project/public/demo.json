@@ -1,0 +1,20 @@
+[
+ {
+    "name": "productName1",
+    "description": "productDescription1",
+    "catId": 2,
+    "imageUrl": "imageURL1",
+    "price": 16,
+    "dimensions": "productDimensions1",
+    "materials":"productMaterials1"
+ },
+ {
+    "name": "productName2",
+    "description": "productDescription2",
+    "catId": 3,
+    "imageUrl": "imageURL2",
+    "price": 20,
+    "dimensions": "productDimensions2",
+    "materials":"productMaterials2"
+ }
+]

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Name: Sebastian Duarte
+    Assignment: CSC300x Project: Storepage
+    File Contents: Product details page for a certain product.
+-->
+
+<head>
+
+<title> Product Name </title>
+
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<script src="scripts/details.js"></script>
+
+</head>
+
+<body>
+
+    <header class="flex-container">
+
+        <h1 class="flex-item">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Earring Image" id="logoImg">
+                <a>
+        </h1> <!--to be replaced by logo-->
+        
+        <div class="flex-item">
+            <input id='searchValue' type="text" placeholder="Search..."> 
+            <button class="goButton" id="searchBtn">Submit</button>
+        </div>
+
+        <div class="flex-item" id="signInButton">
+
+        </div>
+
+        <nav class="flex-item">
+
+            <div class="dropdown-section">
+
+                <button class="dropdown-button">Menu</button>
+
+                <div class="dropdown-options">
+                    <a href="bestSellers.html">Best-Sellers</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="allProducts.html">All Products</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="login.html">Log Out</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+        
+        <section class="flex-container">
+            <div class="flex-item2">
+                <h2 id="productName">Earring Name</h2>
+                <img id ="productImage" src="images/search-icon.png" alt="Earring Image">
+                <p class="product-Price" id="productPrice">
+                    $19.35
+                </p>
+                <button class="goButton" id ="addToBtn">Add To Cart</button>
+            </div>
+            <div class="flex-item">
+                <h3>About:</h3>
+                <p class="splash-section" id="productDescription">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing<br> 
+                    elit, sed do eiusmod tempor incididunt ut labore et<br>
+                    dolore magna aliqua. 
+                </p>
+                <h3>Dimensions:</h3>
+                <p class="splash-section" id="productDimensions">
+                    <strong>Height:</strong> 1/2''
+                    <strong>Width:</strong> 1/2''
+                </p>
+                <h3>Materials:</h3>
+                <p class="splash-section" id="productMaterials">
+                    List Materials Here. 
+                </p>
+            </div>
+        </section>
+        
+
+    <footer class="flex-container">
+
+        <div class="flex-item">
+
+            <h2>Address:</h2>
+            <p>
+                <strong>3744 Keyser Ridge Road</strong> <br>
+                Greensboro, NC <br>
+                58875-8807 <br>
+            </p>
+
+        </div>
+
+        <div class="flex-item">
+
+            <h2>Contact Us:</h2>
+            <p>
+
+                <strong>Phone Number</strong>: 
+                <br>+1 (213)-421-3866<br>
+                <strong>Email:</strong><br>
+                Clay@Soul.gov
+            </p>
+
+        </div>
+
+        <div class="flex-item">
+
+            <strong>Copyright &#169 2024 ClaySoul</strong>. <br>
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
